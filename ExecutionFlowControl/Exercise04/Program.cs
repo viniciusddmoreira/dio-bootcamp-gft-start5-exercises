@@ -20,7 +20,11 @@
                 else
                 {
                     Console.WriteLine("O valor informado é: " + valor);
-                    continue;
+                    if (valor < 10)
+                    {
+                        continue;
+                    }
+                    Console.WriteLine("O valor é maior que o número 10");
                 }
             } while (condicao == true);
         }
